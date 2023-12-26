@@ -1,0 +1,96 @@
+<html>
+ <head>
+  <title>Mobile Title Here</title>
+
+ <!--Mobile Meta Tags-->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <meta name="apple-mobile-web-app-title" content="Mobile Title Here">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Expires" content="-1">
+
+ <!--Homescreen Icon & Load Screen-->
+   <link rel="apple-touch-icon" href="../img/apple-touch-icon.png?m=<?php echo filemtime('../img/apple-touch-icon.png'); ?>" /> <!--200x200-->
+   <link rel="apple-touch-startup-image" href="/img/startup-image.png"> <!--Min 320px Width-->
+
+ <!--SEO Meta Tags-->
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=8">
+   <meta name="description" content="Short Description of 160 Characters">
+   <meta name="author" content="Your Name Here">
+   <meta name="robots" content="index, follow" />
+
+ <!--Social Media Meta Tags-->
+  <!--Facebook-->
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="Mobile URL Here" />
+   <meta property="og:title" content="Mobile Title Here" />
+   <meta property="og:description" content="Short Description of 200 Characters" />
+   <meta property="og:image" content="Preview Image Here - Square Image Preferred" />
+
+  <!--Twitter-->
+   <meta property="twitter:card" content="summary" />
+   <meta property="twitter:url" content="Mobile URL Here" />
+   <meta property="twitter:title" content="Mobile Title Here" />
+   <meta property="twitter:description" content="Short Description of 200 Characters" />
+   <meta property="twitter:image" content="60x60 Image Here" />
+
+ <!--Scripts-->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="js/menu.js"></script> 
+   <script src="js/scripts.js"></script> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script>googleanalytics();</script>
+ <!--End-->
+
+ <!--Browser Icon (Must be 16x16)-->
+   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+ </head>
+
+ <body>
+  <script type="text/javascript">
+   document.write(menu())
+  </script>
+
+  <script type="text/javascript">
+   document.write(header())
+  </script>
+
+  <script type="text/javascript">
+   document.write(shadow())
+  </script>
+
+  <div id="projects">
+
+   <div class="mainpanel">
+    <div class="panel" style="width:100%;">
+	Horizontal Panel: 100%
+    </div>
+    <div class="panel" style="width:100%;">
+	Horizontal Panel: 100%
+    </div>
+    <div class="panel" style="width:100%;">
+	Horizontal Panel: 100%
+    </div>
+   </div>
+
+   <div class="mainpanel">
+    <div class="panel" style="width:100%;">
+	Horizontal Panel: 100%
+    </div>
+    <div class="panel" style="width:100%;">
+	Horizontal Panel: 100%
+    </div>
+   </div>
+
+  </div>
+
+  <script>
+   $( ".menu1" ).click(function() {
+    $( this ).toggleClass( "menu2" );
+   });
+  </script>
+ </body>
+</html>

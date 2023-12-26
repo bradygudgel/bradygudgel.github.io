@@ -1,0 +1,343 @@
+/* Body Defaults */
+
+:root {
+ --main:#87CEEB;
+ --2nd:#C1E6F5;
+}
+
+html {
+ border:0;
+ font-family: Verdana, sans-serif;
+}
+
+body {
+ background-color:rgba(0, 0, 0, 1);
+ background-image:url('');
+ background-size:cover;
+ background-attachment:fixed;
+ background-position:center;
+ margin:auto;
+ position:relative;
+}
+
+img {
+ border-style:none;
+ border:none;
+}
+
+/* End of Body Defaults */
+
+/* Main Section */
+
+#content {
+ background-color:rgba(255, 255, 255, 0.8);
+ width:100%;
+ min-width:480px;
+ margin:auto;
+ position:relative;
+ left:0;
+ right:0;
+ top:0;
+}
+
+#header {
+ background-color:none;
+ background-image:url('');
+ height:50px;
+ width:100%;
+ position:relative;
+ top:0;
+}
+
+.logo {
+ height:50px;
+}
+
+#indexmenu {
+ background-color:rgba(255, 255, 255, 1);
+ background-image:url('../img/logo_full.png');
+ background-size:400px 50px;
+ background-position: 1% 50%;
+ background-repeat:no-repeat;
+ box-shadow:0px 0px 2px black;
+ height:100%;
+ width:100%;
+ color:white;
+ text-transform: uppercase;
+ position:sticky;
+ top:0px;
+}
+
+#menu {
+ background-color: none;
+ background-image: url('');
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 25px;
+ color: white;
+ text-transform: uppercase;
+ padding-top: 5px;
+ box-shadow: 0px 0px 2px black;
+ position: sticky;
+ top: 0px;
+}
+
+a.link {
+ text-decoration:none;
+ color:forestgreen;
+}
+
+a.link:hover {
+ text-decoration:underline;
+ text-shadow:0px 1px 0px  rgba(255, 255, 255, 0.2);
+}
+
+a.link:visited {
+ text-decoration:none;
+}
+
+#spacing {
+ padding-top:30px;
+ padding-left:2%;
+}
+
+#spacingbig {
+ padding-top:30px;
+ padding-left:20px;
+}
+
+#innercontent {
+ background-color:none;
+ background-image:url('../img/');
+ background-size:cover;
+ background-position:center;
+ background-attachment:fixed;
+ min-height:100vh;
+ box-shadow:0px 0px 2px black;
+ padding-top:2%;
+ padding-bottom:2%;
+}
+
+.mainpanel {
+ display: flex;
+ justify-content:center;
+ border:1px solid white;
+ padding-left:1%;
+ padding-right:1%;
+}
+
+.mainpanel > div {
+ margin:10px;
+}
+
+.panel {
+ display:wrap;
+ background-color:none;
+ font-size:16px;
+ padding-left:1%;
+ padding-right:1%;
+ padding-top:1%;
+ padding-bottom:20px;
+ text-shadow:0px -1px 0px  rgba(255, 255, 255, 0.2);
+ border:1px solid black;
+}
+
+#cover {
+ background-color:none;
+ background-image:url('../img/cover.png');
+ background-size:contain;
+ background-position:center;
+ background-repeat: no-repeat;
+ height:200px;
+}
+
+#footer {
+ background-color:rgba(255, 255, 255, 1);
+ background-image:url('');
+ background-size:cover;
+ background-position:center;
+ color:white;
+ height:25px;
+ width:100%;
+ padding-top:5px;
+ position:relative;
+ left:0;
+ bottom:0;
+ box-shadow:0px 0px 2px black;
+}
+
+/* End of Main Section */
+
+/* Menu Links and Dropdown */
+a.menu {
+ color:black;
+ text-decoration:none;
+ font-size:14px;
+ padding: 15px 30px;
+}
+
+a.menu:hover {
+ text-decoration:none;
+}
+
+a.menu:visited {
+ text-decoration:none;
+}
+
+.menu {
+  text-align:center;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+
+.menu:hover {
+  background-color: var(--main);
+}
+
+.dropdown {
+  font-size:10px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: var(--main);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu:hover .dropdown {
+  display: block;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown a:hover {
+  background-color: var(--2nd);
+}
+
+/* End Menu Dropdown */
+
+/* Mobile Section */
+
+#desktop-only {display:block;}
+#mobile-only {display:none;}
+
+@media only screen and (max-width:1000px) {
+ #desktop-only {display:none;}
+ #mobile-only {display:block;}
+ .mainpanel { flex-wrap: wrap;}
+}
+
+.mobilemenu1 {
+ background:url('http://surrealist.games/m/img/menu.png') no-repeat right top;
+ height:50px;
+ width:100%;
+ z-index:11;
+}
+
+.mobilemenu2 {
+ background:url('http://surrealist.games/m/img/menu.png') no-repeat right bottom; 
+ z-index:12;
+}
+
+.mobilemenu1 p {
+ background:none;
+ width:30%;
+ position:absolute;
+ top:35px;
+ right:0px;
+ visibility:hidden;
+ opacity:0;
+ z-index:12;
+ border-bottom: 300px solid transparent;
+ border-left: 1500px solid transparent;
+}
+
+.mobilemenu2 p {
+ visibility:visible;
+ opacity: 1;
+ -khtml-transition: opacity 0.2s;
+ -khtml-border-bottom-left-radius:10px;
+ -khtml-border-bottom-right-radius:10px;
+ transition: opacity 0.2s;
+ border-bottom-left-radius:10px;
+ border-bottom-right-radius:10px;
+}
+
+a.mobilemenu {
+ color:white;
+ text-decoration:none;
+ font-size:50%;
+ text-shadow:0px 2px 10px black;
+ padding:5px;
+}
+
+a.mobilemenu:hover {
+ color:#00FFFF;
+ text-decoration:none;
+ text-shadow:0px 0px 5px black;
+ background-image:url('http://surrealist.games/img/menulink_hovered.png');
+ background-size:cover;
+ background-position:center;
+}
+
+a.mobilemenu:visited {
+ text-decoration:none;
+}
+
+#mobileitem {
+ margin:0;
+ padding:0;
+ list-style:none;
+ -khtml-border-radius:10px;
+}
+
+.mobileitem.top {
+ border-top-left-radius:10px;
+ border-top-right-radius:10px;
+}
+
+.mobileitem.bottom {
+ border-bottom-left-radius:10px;
+ border-bottom-right-radius:10px;
+ border-bottom:0px;
+}
+
+a.mobileitem {
+ display:block;
+ padding:8px 8px 8px 8px;
+ text-decoration:none;
+ text-align:center;
+ color:black;
+ background:url('') no-repeat right center white;
+ border-bottom: 1px solid #E0E0E0;
+ -khtml-box-shadow:0px 1px 2px #000000;
+ box-shadow:0px 1px 2px #000000;
+}
+
+a.mobileitem:hover {
+ background-color: var(--main);
+}
+
+/* End of Mobile Section */

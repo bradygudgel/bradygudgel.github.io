@@ -1,46 +1,173 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-<title> Brady Gudgel: Portfolio</title>
-</head>
-<body>
-This is my personal portfolio of projects. <br><br>
+ <head>
+  <title>Site Title Here</title>
 
-Categories: <br>
-- Coding <br>
-- Gaming <br>
-- Graphics <br>
-- Music <br>
-<br><br>
+ <!--SEO Meta Tags-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Short Description of 160 Characters">
+  <meta name="author" content="Your Name Here">
+  <meta name="robots" content="index, follow" />
 
-Coding: <br>
-- The Nightstand <br>
-<br><br>
+ <!--Social Media Meta Tags-->
+  <!--Facebook-->
+   <meta property="og:site" content="Site Name Here">
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="URL Here" />
+   <meta property="og:title" content="Title Here" />
+   <meta property="og:description" content="Short Description of 200 Characters" />
+   <meta property="og:image" content="1200x628 Image Here" />
 
-Gaming: <br>
-- DOOM <br>
-- Portal 2 <br>
-- R.A.V.E <br>
-- Unreal Engine <br>
-<br><br>
+  <!--Twitter-->
+   <meta property="twitter:card" content="summary" />
+   <meta property="twitter:url" content="URL Here" />
+   <meta property="twitter:title" content="Title Here" />
+   <meta property="twitter:description" content="Short Description of 200 Characters" />
+   <meta property="twitter:image" content="60x60 Image Here" />
 
-Music: <br>
-- Ghouls Records <br>
-- KaBASS <br>
-<br><br>
+ <!--Scripts-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/uas.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://surrealist.games/JS/jquery-3.6.0.min.js"></script>
+  <!-- <script type="module" src="js/script.js"></script> -->
+ <!--End-->
 
-DOOM: <br>
-- D3UACLabs <br>
-- Mazeum <br>
-<br><br>
+ <!--Browser Icon (Must be 16x16)-->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
-Portal 2: <br>
-- The Initiation <br>
-<br><br>
+ </head>
 
-Unreal Engine: <br>
-- Tutorials <br>
-<br><br>
+ <body>
+  <!-- Enable for Mobile Site Standalone (Setup Required)
+  	<script>mobile();</script>
+  -->
+  <div id="content">
 
-</body>
+<!--Menu-->
+   <div id="indexmenu">
+    <div id="desktop-only"></div>
+    <div id="mobile-only"></div>
+   </div>
+
+<!--Main Section-->
+   <div id="innercontent">
+
+    <div class="mainpanel">
+     <div class="panel" style="width:50%;">
+	<a href="#" class="link">Horizontal Panel: 50%, Default</a>
+     </div>
+    </div>
+
+    <div class="mainpanel" style="justify-content:right;">
+     <div class="panel" style="width:50%;">
+	<a href="#" class="link">Horizontal Panel: 50%, Right</a>
+     </div>
+    </div>
+
+    <div class="mainpanel">
+     <div class="panel" style="width:100%">
+	Horizontal Panel: 100%
+     </div>
+
+     <div class="panel" style="width:100%">
+	Horizontal Panel: 100%
+     </div>
+
+     <div class="panel" style="width:100%">
+	Horizontal Panel: 100%
+     </div>
+
+     <div class="panel" style="width:100%">
+	Horizontal Panel: 100%
+     </div>
+
+     <div class="panel" style="width:100%">
+	Horizontal Panel: 100%
+     </div>
+
+     <div class="panel" style="width:100%">
+	Horizontal Panel: 100%
+     </div>
+
+     <div class="panel" style="width:100%">
+	Horizontal Panel: 100%
+     </div>
+    </div>
+
+    <div class="mainpanel">
+     <div class="panel" style="width:20%">
+	Horizontal Panel: 20%
+     </div>
+
+     <div class="panel" style="width:100%">
+	Horizontal Panel: 100%
+     </div>
+
+     <div class="panel" style="width:20%">
+	Horizontal Panel: 20%
+     </div>
+    </div>
+
+    <div class="mainpanel">
+     <div class="panel" style="width:200%">
+	Horizontal Panel: 200%
+     </div>
+
+     <div class="panel" style="width:100%">
+	Horizontal Panel: 100%
+     </div>
+
+     <div class="panel" style="width:200%">
+	Horizontal Panel: 200%
+     </div>
+    </div>
+
+    <div class="mainpanel" style="justify-content:space-evenly;">
+     <div class="panel" style="width:40%;">
+	Horizontal Panel: 40%, Space Evenly
+     </div>
+
+     <div class="panel" style="width:40%;">
+	Horizontal Panel: 40%, Space Evenly
+     </div>
+    </div>
+
+    <div class="mainpanel" style="justify-content:space-between;">
+     <div class="panel" style="width:40%;">
+	Horizontal Panel: 40%, Space Between
+     </div>
+
+     <div class="panel" style="width:10%;">
+	Horizontal Panel: 10%, Space Between
+     </div>
+    </div>
+
+   </div>
+
+<!--Footer-->
+   <center>
+    <div id="footer"></div>
+   </center>
+
+  </div>
+
+<!-- Mobile Menu Toggle-->
+  <script>
+   $( ".mobilemenu1" ).click(function() {
+     $( this ).toggleClass( "mobilemenu2" );
+   });
+  </script>
+
+<!-- Set Default Data -->
+  <script type="text/javascript">
+   document.getElementById('desktop-only').innerHTML = indexmenu();
+   document.getElementById('mobile-only').innerHTML = mobilemenu();
+   document.getElementById('footer').innerHTML = footer();
+  </script>
+
+ </body>
 </html>
