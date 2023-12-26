@@ -29,11 +29,9 @@
 
  <!--Scripts-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="js/uas.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/scripts.js"></script>
-  <script src="https://surrealist.games/JS/jquery-3.6.0.min.js"></script>
-  <!-- <script type="module" src="js/script.js"></script> -->
+  <!-- <script src="js/uas.js"></script> --><!-- Enable for Mobile Site Standalone (Setup Required) -->
+  <script src="js/variables.js"></script>
+  <script src="js/functions.js"></script>
  <!--End-->
 
  <!--Browser Icon (Must be 16x16)-->
@@ -45,7 +43,12 @@
   <!-- Enable for Mobile Site Standalone (Setup Required)
   	<script>mobile();</script>
   -->
+
   <div id="content">
+
+   <!-- Enable for Header Above Menu (Or Anywhere)
+	<div id="header"></div>
+   -->
 
 <!--Menu-->
    <div id="indexmenu">
@@ -149,19 +152,8 @@
 
   </div>
 
-<!-- Set Default Data -->
-  <script type="text/javascript">
-   document.getElementById('menu-desktop').innerHTML = indexmenu();
-   document.getElementById('menu-mobile').innerHTML = mobilemenu();
-   document.getElementById('footer').innerHTML = footer();
-  </script>
-
-<!-- Mobile Menu Toggle-->
-  <script>
-   $( ".mobilemenu1" ).click(function() {
-     $( this ).toggleClass( "mobilemenu2" );
-   });
-  </script>
+  <!--Post Load Scripts-->
+   <script src="js/post-load.js"></script>
 
  </body>
 </html>

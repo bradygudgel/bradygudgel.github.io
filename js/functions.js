@@ -25,6 +25,17 @@ function generateMobileLastLinkHTML(url, name) {
   return linkHTML;
 }
 
+function generateDropdownHTML(options) {
+  var dropdownHTML = "<span class='dropdown'><ul>";
+
+  for (var i = 0; i < options.length; i++) {
+    dropdownHTML += "<li><a href='" + options[i].url + "'>" + options[i].text + "</a></li>";
+  }
+
+  dropdownHTML += "</ul></span>";
+  return dropdownHTML;
+}
+
 function indexmenu() {
   var linksHTML = "<b><div id='menu-desktop' style='white-space:nowrap;text-align:right;'>";
 
@@ -62,17 +73,6 @@ function mobilemenu() {
 
   linksHTML += "</p></div></b>";
   return linksHTML;
-}
-
-function generateDropdownHTML(options) {
-  var dropdownHTML = "<span class='dropdown'><ul>";
-
-  for (var i = 0; i < options.length; i++) {
-    dropdownHTML += "<li><a href='" + options[i].url + "'>" + options[i].text + "</a></li>";
-  }
-
-  dropdownHTML += "</ul></span>";
-  return dropdownHTML;
 }
 
 function footer() {
