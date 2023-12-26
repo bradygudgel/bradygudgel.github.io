@@ -13,7 +13,7 @@ linkNames = [
   'Group 2',
   'Link 1',
   'Group 3',
-  'CONTACT',
+  'Contact',
 ];
 
 dropdownMenus = [

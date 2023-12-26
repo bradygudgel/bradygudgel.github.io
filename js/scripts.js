@@ -26,7 +26,7 @@ function generateMobileLastLinkHTML(url, name) {
 }
 
 function indexmenu() {
-  var linksHTML = "<b><div id='desktop-only' style='white-space:nowrap;text-align:right;'>";
+  var linksHTML = "<b><div id='menu-desktop' style='white-space:nowrap;text-align:right;'>";
 
   for (var i = 0; i < linkURLs.length; i++) {
     linksHTML += generateLinkHTML(linkURLs[i], linkNames[i], dropdownMenus[i].hasDropdown, dropdownMenus[i].options);
@@ -37,7 +37,7 @@ function indexmenu() {
 }
 
 function menu() {
-  var linksHTML = "<b><div id='desktop-only' style='white-space:nowrap;text-align:right;'>";
+  var linksHTML = "<b><div id='menu-desktop' style='white-space:nowrap;text-align:right;'>";
 
   for (var i = 1; i < linkURLs.length; i++) {
     linksHTML += generateLinkHTML(linkURLs[i], linkNames[i], dropdownMenus[i].hasDropdown, dropdownMenus[i].options);

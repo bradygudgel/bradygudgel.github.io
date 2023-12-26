@@ -240,12 +240,12 @@ a.menu:visited {
 
 /* Mobile Section */
 
-#desktop-only {display:block;}
-#mobile-only {display:none;}
+#menu-desktop {display:block;}
+#menu-mobile {display:none;}
 
 @media only screen and (max-width:1000px) {
- #desktop-only {display:none;}
- #mobile-only {display:block;}
+ #menu-desktop {display:none;}
+ #menu-mobile {display:block;}
  .mainpanel { flex-wrap: wrap;}
 }
 

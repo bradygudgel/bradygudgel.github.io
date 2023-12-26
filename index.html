@@ -49,8 +49,8 @@
 
 <!--Menu-->
    <div id="indexmenu">
-    <div id="desktop-only"></div>
-    <div id="mobile-only"></div>
+    <div id="menu-desktop"></div>
+    <div id="menu-mobile"></div>
    </div>
 
 <!--Main Section-->
@@ -58,13 +58,17 @@
 
     <div class="mainpanel">
      <div class="panel" style="width:50%;">
-	<a href="#" class="link">Horizontal Panel: 50%, Default</a>
+	<a href="#" class="link">
+	 Horizontal Panel: 50%, Default
+	</a>
      </div>
     </div>
 
     <div class="mainpanel" style="justify-content:right;">
      <div class="panel" style="width:50%;">
-	<a href="#" class="link">Horizontal Panel: 50%, Right</a>
+	<a href="#" class="link">
+	 Horizontal Panel: 50%, Right
+	</a>
      </div>
     </div>
 
@@ -147,8 +151,8 @@
 
 <!-- Set Default Data -->
   <script type="text/javascript">
-   document.getElementById('desktop-only').innerHTML = indexmenu();
-   document.getElementById('mobile-only').innerHTML = mobilemenu();
+   document.getElementById('menu-desktop').innerHTML = indexmenu();
+   document.getElementById('menu-mobile').innerHTML = mobilemenu();
    document.getElementById('footer').innerHTML = footer();
   </script>
 
