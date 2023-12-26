@@ -6,7 +6,7 @@
 
  <!--SEO Meta Tags-->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Short Description of 160 Characters">
   <meta name="author" content="Your Name Here">
   <meta name="robots" content="index, follow" />
@@ -155,18 +155,18 @@
 
   </div>
 
-<!-- Mobile Menu Toggle-->
-  <script>
-   $( ".mobilemenu1" ).click(function() {
-     $( this ).toggleClass( "mobilemenu2" );
-   });
-  </script>
-
 <!-- Set Default Data -->
   <script type="text/javascript">
    document.getElementById('desktop-only').innerHTML = indexmenu();
    document.getElementById('mobile-only').innerHTML = mobilemenu();
    document.getElementById('footer').innerHTML = footer();
+  </script>
+
+<!-- Mobile Menu Toggle-->
+  <script>
+   $( ".mobilemenu1" ).click(function() {
+     $( this ).toggleClass( "mobilemenu2" );
+   });
   </script>
 
  </body>
